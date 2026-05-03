@@ -3,7 +3,7 @@ import hashlib
 print("Welcome to Hash MD5 :)")
 
 try:
-    text = str(input("Inform the text: "))
+    text = input("Inform the text: ")
     before = text
     text_encrypted = hashlib.md5(text.encode())
     text_encrypted = text_encrypted.hexdigest()
@@ -24,7 +24,7 @@ try:
                 print(f"--Text Decrypted--\nText: {before}")
             
             elif option == 3:    
-                text = str(input("Inform the text: "))
+                text = input("Inform the text: ")
                 before = text
                 text_encrypted = hashlib.md5(text.encode())
                 text_encrypted = text_encrypted.hexdigest()
